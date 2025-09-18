@@ -51,7 +51,7 @@ import AdminPendingKyc from "./Pages/AdminPendingKyc/AdminPendingKyc";
 import License from "./Pages/License/License";
 import Chart from "./Pages/Chart/Chart";
 import InvestmentFees from "./Pages/InvestmentFees/InvestmentFees";
-import logVisitor from "./components/logVisitor";
+// import logVisitor from "./components/logVisitor";
 
 axios.defaults.withCredentials = true;
 
@@ -69,9 +69,9 @@ const App = () => {
   }, [dispatch, isLoggedIn, user]);
 
     // 👇 log visitor on each page view
-  useEffect(() => {
-    logVisitor(location.pathname);
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   logVisitor(location.pathname);
+  // }, [location.pathname]);
   return (
     <div className="App">
       <Navbar />
